@@ -53,7 +53,7 @@ Guarde as chaves geradas:
 
 ![](/ImageTagging/images/azure-solutionlets-image-tagging-10.png)
 
-### Passo 2: Adicionar as chaves no projeto
+### Passo 3: Adicionar as chaves no projeto
 Clone esse repositório e abra a solução do projeto no visual Studio (**ImageTagging.sln**)
 
 Abra o arquivo de configuração **Web.config** e altere os esses campos, onde:
@@ -74,9 +74,9 @@ Abra o arquivo de configuração **Web.config** e altere os esses campos, onde:
       .
     </appSettings>
 
-### Passo 3: Publicar o projeto no Microsoft Azure
+### Passo 4: Publicar o projeto no Microsoft Azure
 
-No Visual Studio, clique com o botão direito no projeto **ImageTagging** e selecione o item no menu **Publish...**:
+No Visual Studio, clique com o botão direito no projeto **ImageTagging** e selecione o item **Publish...**:
 
 ![](/ImageTagging/images/azure-solutionlets-image-tagging-11.png)
 
@@ -92,7 +92,7 @@ Adicione um **Web App Name** único, selecione ou crie um novo **App Service Pla
 
 ![](/ImageTagging/images/azure-solutionlets-image-tagging-14.png)
 
-Ao finalizar a criação do **App App** o vamos publicar o projeto no **Azure** clique no botão **Publish**:
+Ao finalizar a criação do **Web App** vamos publicar o projeto no **Azure** clicando no botão **Publish**:
 
 ![](/ImageTagging/images/azure-solutionlets-image-tagging-15.png)
 
