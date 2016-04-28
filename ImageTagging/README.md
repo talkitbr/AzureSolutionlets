@@ -21,3 +21,89 @@ Você será uma levado a uma página onde deve aguardar alguns instantes até qu
 
 ![](/ImageTagging/images/azure-solutionlets-image-tagging-03.png)
 
+### Passo 1: Criar chave do Microsoft Cognitive Services
+Acesse [https://www.microsoft.com/cognitive-services/en-us/subscriptions](https://www.microsoft.com/cognitive-services/en-us/subscriptions) e clique no botão **Request new trials**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-04.png)
+
+Selecione o item **Computer Vision - Preview**, aceite os termos de uso e clique no botão **Subscribe**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-05.png)
+
+Encontre na lista a API **Computer Vision - Preview** e clique no botão **show** para mostrar a chave da sua API:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-06.png)
+
+Guarde essa chave.
+
+### Passo 2: Criar chave do Flickr
+Acesse [https://www.flickr.com/services/api/misc.api_keys.html](https://www.flickr.com/services/api/misc.api_keys.html) e clique no link **Apply for your key online now**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-07.png)
+
+Escolha o tipo do seu aplicativo: Não comercial ou comercial:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-08.png)
+
+Entre com as informações do seu app e clique no botão **SUBMIT**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-09.png)
+
+Guarde as chaves geradas:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-10.png)
+
+### Passo 2: Adicionar as chaves no projeto
+Clone esse repositório e abra a solução do projeto no visual Studio (**ImageTagging.sln**)
+
+Abra o arquivo de configuração **Web.config** e altere os esses campos, onde:
+
+**[YOUR_MICRSOFT_COGNITIVE_KEY]** => Chave do Microsoft Cognitive Services
+
+**[YOUR_FLIKR_API_KEY]** => Chave do Flickr
+
+**[YOUR_FLIKR_SHARED_SECRET_KEY]** => Shared Secret do Flickr
+
+
+    <appSettings>
+      <add key="CognitiveServiceSubscriptionKey" value="[YOUR_MICRSOFT_COGNITIVE_KEY]"/>
+      <add key="FlickrApiKey" value="[YOUR_FLIKR_API_KEY]"/>
+      <add key="FlickrSharedSecret" value="[YOUR_FLIKR_SHARED_SECRET_KEY]"/>
+      .
+      .
+      .
+    </appSettings>
+
+### Passo 3: Publicar o projeto no Microsoft Azure
+
+No Visual Studio, clique com o botão direito no projeto **ImageTagging** e selecione o item no menu **Publish...**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-11.png)
+
+Selecione a opção **Microsoft Azure Web Apps**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-12.png)
+
+Escolha a sua assinatura e clique no botão **New...**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-13.png)
+
+Adicione um **Web App Name** único, selecione ou crie um novo **App Service Plan** e clique no botão **Create**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-14.png)
+
+Ao finalizar a criação do **App App** o vamos publicar o projeto no **Azure** clique no botão **Publish**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-15.png)
+
+O projeto será compilado e publicado no **Microsoft Azure**:
+
+![](/ImageTagging/images/azure-solutionlets-image-tagging-16.png)
+
+Parabéns! Você concluiu este Hands-on-lab e conseguiu obter as palavras correspondentes as imagens!
+
+### Recursos Adicionais
+
+* [MVA de Azure](https://mva.microsoft.com/product-training/microsoft-azure)
+* [Channel 9 Cognitive Services](https://channel9.msdn.com/Events/Build/2016/B878)
+* [talkitbr](https://talkitbr.com/)
